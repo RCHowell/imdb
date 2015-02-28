@@ -19,6 +19,8 @@ html
 		script(id="movie", type="text/x-handlebars-template")
 			h1 {{Title}} ({{Year}})
 			span {{Runtime}} | {{Genre}} | {{Released}} | {{Rated}}
+			h2 Poster
+			img(id="poster", src="{{Poster}}")
 			h2 Ratings
 			.section
 				h3 IMDb | {{imdbRating}}

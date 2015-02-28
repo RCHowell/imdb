@@ -154,6 +154,12 @@ h3{
 .section a{
 	display: block;
 }
+#poster{
+	display: block;
+	margin: 40px auto;
+	width: 100%;
+	max-width: 400px;
+}
 /*.thumbimage{
 	width: 100% !important;
 	height: auto !important;
