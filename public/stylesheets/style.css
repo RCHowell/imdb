@@ -1,0 +1,163 @@
+body {
+  padding: 0 20px;
+  margin: 0;
+  background: #fff;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+div{
+	margin: 0;
+	padding: 0;
+}
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 60px;
+	width: 100%;
+	background: #fff;
+	padding: 0;
+	border-bottom: 1px solid #d0d0d0;
+	z-index: 999;
+}
+#header-left{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 60px;
+	width: 60px;
+	margin: 0;
+	padding: 0;
+	border-right: 1px solid #d0d0d0;
+}
+#header-input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 60px;
+	right: 60px;
+	margin: 0;
+	padding: 0;
+}
+#header-right{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	height: 60px;
+	width: 60px;
+	border-left: 1px solid #d0d0d0;
+}
+.button{
+	height: 60px;
+	width: 60px;
+	padding: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+.button img{
+	margin: 17px;
+	padding: 0;
+	height: 26px;
+	width: 26px;
+	pointer-events: none;
+}
+.button:hover{
+	background: #eee;
+	border-radius: 4px;
+}
+#searchbar{
+	height: 48px;
+	padding-left: 12px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	right: 4px;
+	bottom: 4px;
+	font-size: 1em;
+	color: #444;
+	border: none;
+	border-radius: 2px;
+}
+#searchbar:hover{
+	border: none;
+}
+#searchbar:focus{
+	border: none;
+	outline: 0;
+}
+#main{
+	margin: 100px 0;
+}
+#content{
+	margin: 0 auto;
+	max-width: 650px;
+	color: #444;
+	line-height: 1.5em;
+}
+h2{
+	display: block;
+	margin: 20px 0;
+	padding: 0;
+	font-size: 1.3em;
+	line-height: 1.4em;
+	border-bottom: 1px solid #d0d0d0;
+}
+h1{
+	margin: 20px 0 4px 0;
+	line-height: 1.2em;
+	/*border-bottom: 3px solid #d0d0d0;*/
+}
+.article-head{
+	margin: 20px 0 0 0;
+	padding: 0;
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.listing{
+	margin: 12px 0;
+	display: block;
+	line-height: 1.3em;
+	font-size: 1.3em;
+}
+#banner{
+	height: 200px;
+	width: 100%;
+	background-size: cover;
+}
+.section{
+	margin: 0 0 0 30px;
+	padding: 0 0 20px 0;
+}
+.section p{
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+}
+h3{
+	display: inline-block;
+	margin: 20px 0 0 0;
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.1em;
+}
+#loading{
+	display: block;
+	margin: 120px auto;
+	padding: 0;
+	pointer-events: none;
+}
+.section a{
+	display: block;
+}
+/*.thumbimage{
+	width: 100% !important;
+	height: auto !important;
+}
+.thumbinner{
+	width: 100% !important;
+}*/

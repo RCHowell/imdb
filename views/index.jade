@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	header
+		#header-left
+			div.button
+				img(src="/images/home.png")
+		form#search-form
+			#header-input
+				input(id="searchbar", type="text", placeholder="Search IMDb")
+			#header-right
+				div.button(onclick="search()")
+					img(src="/images/search.png")
+	#main
+		#content
+			h1 Welcome to the IMDB
+			h2 What is this?
+			p This site uses all data from IMDB and displays it in a very readable format.

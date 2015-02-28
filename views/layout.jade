@@ -1,0 +1,50 @@
+doctype html
+html
+	head
+		title
+			| IMDb
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='icon', href='/images/favicon.png', type="image/png")
+		script(src="//code.jquery.com/jquery-1.11.2.min.js")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		script(src="/javascripts/function.js")
+		script(src="/javascripts/handlebars.js")
+	body
+		block content
+		script(id="listing", type="text/x-handlebars-template")
+			.listing
+				a.article-head(href="/movie/{{title}}/{{id}}")
+					| {{title}}
+				| &nbsp;&mdash; ({{year}})
+		script(id="movie", type="text/x-handlebars-template")
+			h1 {{Title}} ({{Year}})
+			span {{Runtime}} | {{Genre}} | {{Released}} | {{Rated}}
+			h2 Ratings
+			.section
+				h3 IMDb | {{imdbRating}}
+				p {{imdbVotes}} votes
+				h3 Rotten Tomatoes | {{tomatoMeter}}%
+				p {{tomatoConsensus}}
+			h2 Plot
+			p{{Plot}}
+			h2 About
+			.section
+				h3 Actors
+				p {{Actors}}
+				h3 Awards
+				p {{Awards}}
+				h3 Box Office
+				p {{BoxOffice}}
+				h3 Director
+				p {{Director}}
+				h3 Genre
+				p {{Genre}}
+				h3 Production
+				p {{Production}}
+				h3 Rating
+				p {{Rated}}
+				h3 Website
+				a(href='{{Website}}')
+					| {{Website}}
+				h3 Writer
+				p {{Writer}}
