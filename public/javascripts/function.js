@@ -26,7 +26,7 @@ function search(){
 function getMovie(id){
 	$('#content').html('');
 	var movie = Handlebars.compile($('#movie').html());
-	var url = "http://www.omdbapi.com/?i=" + id + "&plot=full&tomatoes=true&callback=?";
+	var url = "http://www.omdbapi.com/?i=" + id + "&plot=full&tomatoes=true&apikey=9ab132ab&callback=?";
 	$.getJSON(url, function(data){
 		console.log(data);
 		var html = movie(data);
